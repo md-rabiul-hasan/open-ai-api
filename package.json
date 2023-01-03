@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "server": "nodemon server",
+    "server": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

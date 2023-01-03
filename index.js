@@ -8,7 +8,7 @@ dotenv.config()
 
 const configuration = new Configuration({
     organization: "org-BkBV1Ulgpvlap1DCOeBu5ZbC",
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "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"
 });
 
 // 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
