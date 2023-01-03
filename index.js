@@ -59,7 +59,8 @@ app.post('/', async (req, res) => {
       message: response.data.choices[0].text
     });
   } catch (err) {
-    console.log(err)
+   
+    
     res.status(500).send({ message: err });
   }
 
@@ -75,7 +76,7 @@ app.get('/models', async(req, res) => {
       models: response.data.data
     });
   } catch (err) {
-    res.status(500).send({ message: 'Internal server error' });
+    res.status(500).send({ message: err });
   }
 
  
