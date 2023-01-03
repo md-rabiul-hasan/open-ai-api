@@ -59,7 +59,7 @@ app.post('/', async (req, res) => {
       message: response.data.choices[0].text
     });
   } catch (err) {
-   
+   console.log(err);
     
     res.status(500).send({ message: err });
   }
@@ -76,6 +76,7 @@ app.get('/models', async(req, res) => {
       models: response.data.data
     });
   } catch (err) {
+    console.log(err)
     res.status(500).send({ message: err });
   }
 
